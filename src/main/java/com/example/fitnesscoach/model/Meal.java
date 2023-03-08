@@ -2,22 +2,30 @@ package com.example.fitnesscoach.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@RequiredArgsConstructor
 @Table(name = "meals")
 public class Meal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false)
     private Long id;
 
-    @NotBlank(message = "Meal name is required")
+    @Column(nullable = false)
     private String name;
 
-    @NotBlank(message = "Meal description is required")
+    @Column(nullable = false)
     private String description;
 
     @OneToMany(mappedBy = "meal", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -27,7 +35,7 @@ public class Meal {
     @JoinColumn(name = "user_id")
     private User user;
 
+    @Column(nullable = false)
     private LocalDate date;
 
-    // constructors, getters and setters, and other methods
 }
