@@ -1,3 +1,4 @@
+/*
 package com.example.fitnesscoach.security;
 
 import jakarta.servlet.ServletException;
@@ -22,3 +23,4 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Invalid username or password");
     }
 }
+*/

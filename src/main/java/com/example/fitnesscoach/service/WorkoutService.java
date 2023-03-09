@@ -3,6 +3,7 @@ package com.example.fitnesscoach.service;
 import com.example.fitnesscoach.model.Workout;
 import com.example.fitnesscoach.repository.WorkoutRepository;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,53 +11,33 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class WorkoutService {
 
     private final WorkoutRepository workoutRepository;
 
-    @Autowired
-    public WorkoutService(WorkoutRepository workoutRepository) {
-        this.workoutRepository = workoutRepository;
-    }
-
     public Workout createWorkout(Workout workout) {
+        // TODO: implementation of logic
         return workoutRepository.save(workout);
     }
 
     public Workout updateWorkout(Long id, Workout workout) {
-        Optional<Workout> optionalWorkout = workoutRepository.findById(id);
-        if (optionalWorkout.isPresent()) {
-            Workout existingWorkout = optionalWorkout.get();
-            existingWorkout.setName(workout.getName());
-            existingWorkout.setDescription(workout.getDescription());
-            existingWorkout.setDuration(workout.getDuration());
-            existingWorkout.setDifficulty(workout.getDifficulty());
-            existingWorkout.setExercises(workout.getExercises());
-            return workoutRepository.save(existingWorkout);
-        } else {
-            throw new EntityNotFoundException("Workout not found with id " + id);
-        }
+        // TODO: implementation of logic
+       return workoutRepository.save(workout);
     }
 
     public void deleteWorkout(Long id) {
-        Optional<Workout> optionalWorkout = workoutRepository.findById(id);
-        if (optionalWorkout.isPresent()) {
-            workoutRepository.deleteById(id);
-        } else {
-            throw new EntityNotFoundException("Workout not found with id " + id);
-        }
+        // TODO: implementation of logic
     }
 
     public Workout getWorkoutById(Long id) {
-        Optional<Workout> optionalWorkout = workoutRepository.findById(id);
-        if (optionalWorkout.isPresent()) {
-            return optionalWorkout.get();
-        } else {
-            throw new EntityNotFoundException("Workout not found with id " + id);
-        }
+        // TODO: implementation of logic
+        // TODO: handle optional
+        return workoutRepository.findById(id).get();
     }
 
     public List<Workout> getAllWorkouts() {
+        // TODO: implementation of logic
         return workoutRepository.findAll();
     }
 }

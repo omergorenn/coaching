@@ -1,3 +1,4 @@
+/*
 package com.example.fitnesscoach.security;public class JwtTokenProvider {
     public boolean validateToken(String jwt) {
     }
@@ -7,3 +8,4 @@ package com.example.fitnesscoach.security;public class JwtTokenProvider {
 
     }
 }
+*/

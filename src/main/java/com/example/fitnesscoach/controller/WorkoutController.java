@@ -2,18 +2,43 @@ package com.example.fitnesscoach.controller;
 
 import com.example.fitnesscoach.model.Workout;
 import com.example.fitnesscoach.service.WorkoutService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@Validated
 @RestController
-@RequestMapping("/api/workouts")
+@RequiredArgsConstructor
+@RequestMapping("/api/workout/")
 public class WorkoutController {
 
-    @Autowired
     private WorkoutService workoutService;
+
+    @PostMapping("")
+    public ResponseEntity<Workout> createWorkout(@RequestBody Workout workout) {
+        // TODO: implementation of logic
+        // TODO: create customized requests
+        // TODO: create customized responses
+        return new ResponseEntity<>(new Workout(), HttpStatus.OK);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Workout> updateWorkout(@PathVariable("id") Long id, @RequestBody Workout workout) {
+        // TODO: implementation of logic
+        // TODO: create customized requests
+        // TODO: create customized responses
+        return new ResponseEntity<>(new Workout(), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteWorkout(@PathVariable("id") Long id) {
+        // TODO: implementation of logic
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 
     @GetMapping("")
     public List<Workout> getAllWorkouts() {
@@ -22,34 +47,7 @@ public class WorkoutController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Workout> getWorkoutById(@PathVariable("id") Long id) {
-        Workout workout = workoutService.getWorkoutById(id);
-        if (workout == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(workout);
-    }
-
-    @PostMapping("")
-    public ResponseEntity<Workout> createWorkout(@RequestBody Workout workout) {
-        Workout newWorkout = workoutService.createWorkout(workout);
-        return ResponseEntity.status(HttpStatus.CREATED).body(newWorkout);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Workout> updateWorkout(@PathVariable("id") Long id, @RequestBody Workout workout) {
-        Workout updatedWorkout = workoutService.updateWorkout(id, workout);
-        if (updatedWorkout == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(updatedWorkout);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Workout> deleteWorkout(@PathVariable("id") Long id) {
-        Workout deletedWorkout = workoutService.deleteWorkout(id);
-        if (deletedWorkout == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(deletedWorkout);
+        // TODO: implementation of logic
+        return new ResponseEntity<>(new Workout(), HttpStatus.OK);
     }
 }

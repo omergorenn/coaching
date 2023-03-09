@@ -1,3 +1,4 @@
+/*
 package com.example.fitnesscoach.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
@@ -43,3 +44,4 @@ public class JwtTokenUtil {
         return Jwts.parser().setSigningKey(JWT_SECRET).parseClaimsJws(token).getBody().getExpiration();
     }
 }
+*/

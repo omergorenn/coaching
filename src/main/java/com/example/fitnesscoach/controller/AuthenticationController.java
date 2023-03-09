@@ -1,3 +1,4 @@
+/*
 package com.example.fitnesscoach.controller;
 
 import com.example.fitnesscoach.security.JwtTokenUtil;
@@ -41,3 +42,4 @@ public class AuthenticationController {
         return ResponseEntity.ok(user);
     }
 }
+*/
