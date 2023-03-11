@@ -1,14 +1,11 @@
 package com.example.fitnesscoach.service;
 
-import com.example.fitnesscoach.model.User;
+import com.example.fitnesscoach.model.entity.User;
 import com.example.fitnesscoach.repository.UserRepository;
-import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

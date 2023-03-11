@@ -1,9 +1,8 @@
 package com.example.fitnesscoach.controller;
 
-import com.example.fitnesscoach.model.Workout;
+import com.example.fitnesscoach.model.entity.Workout;
 import com.example.fitnesscoach.service.WorkoutService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

@@ -1,14 +1,12 @@
 package com.example.fitnesscoach.service;
 
-import com.example.fitnesscoach.model.Workout;
+import com.example.fitnesscoach.model.entity.Workout;
 import com.example.fitnesscoach.repository.WorkoutRepository;
-import jakarta.persistence.EntityNotFoundException;
+import com.example.fitnesscoach.utils.Workouts;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -17,6 +15,8 @@ public class WorkoutService {
     private final WorkoutRepository workoutRepository;
 
     public Workout createWorkout(Workout workout) {
+
+
         // TODO: implementation of logic
         return workoutRepository.save(workout);
     }

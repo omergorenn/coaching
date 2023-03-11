@@ -1,13 +1,12 @@
 package com.example.fitnesscoach.service;
 
-import com.example.fitnesscoach.model.Meal;
+import com.example.fitnesscoach.model.entity.Meal;
 import com.example.fitnesscoach.repository.MealRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -46,6 +45,7 @@ public class MealService {
     }
 
     public Meal getMealById(Long id) {
+
        return mealRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
 

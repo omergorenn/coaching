@@ -1,21 +1,17 @@
-package com.example.fitnesscoach.model;
+package com.example.fitnesscoach.model.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Entity
 @Getter
 @Setter
+@ToString
 @RequiredArgsConstructor
-@Table(name = "meals")
-public class Meal {
+@Table(name = "workouts")
+public class Workout {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,14 +24,9 @@ public class Meal {
     @Column(nullable = false)
     private String description;
 
-    @OneToMany(mappedBy = "meal", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<MealItem> mealItems;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-    @Column(nullable = false)
     private LocalDate date;
-
 }

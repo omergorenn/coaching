@@ -1,6 +1,6 @@
 package com.example.fitnesscoach.repository;
 
-import com.example.fitnesscoach.model.User;
+import com.example.fitnesscoach.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

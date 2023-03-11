@@ -1,16 +1,12 @@
 package com.example.fitnesscoach.controller;
 
-import com.example.fitnesscoach.model.Meal;
-import com.example.fitnesscoach.model.Workout;
+import com.example.fitnesscoach.model.entity.Meal;
 import com.example.fitnesscoach.service.MealService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Validated
 @RestController

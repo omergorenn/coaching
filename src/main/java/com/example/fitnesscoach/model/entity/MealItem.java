@@ -1,4 +1,4 @@
-package com.example.fitnesscoach.model;
+package com.example.fitnesscoach.model.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
