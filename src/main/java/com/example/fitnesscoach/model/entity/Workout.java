@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -12,21 +14,30 @@ import java.time.LocalDate;
 @RequiredArgsConstructor
 @Table(name = "workouts")
 public class Workout {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private Coach coach;
+
     @Column(nullable = false)
-    private String name;
+    private String workoutPlanName;
+
+    @Column(nullable = false)
+    private String workoutDescription;
+
+    @OneToMany(mappedBy = "workout", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Exercise> exercises = new ArrayList<>();
+
 
     @Column(nullable = false)
     private String description;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
     private LocalDate date;
 }
