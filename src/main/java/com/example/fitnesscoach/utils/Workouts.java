@@ -34,7 +34,6 @@ public enum Workouts {
     LATERAL_RAISES("Omuz kaslarını çalıştırır.","Dumbbell'ları her iki elinize alın ve yanlarınızda tutun. Kollarınızı yavaşça yukarı doğru kaldırarak omuz kaslarınızı sıkın, sonra yavaşça başlangıç pozisyonuna geri dönün."),
     SUPERMAN("Sırt ve bel kaslarını çalıştırır.","Yere yüzüstü pozisyonda uzanın, ellerinizi başınızın yanına yerleştirin. Sırtınızı ve bacaklarınızı yavaşça yukarı kaldırarak, birkaç saniye bu pozisyonda kalın, sonra tekrar başlangıç pozisyonuna dönün."),
     LAT_PULLDOWN("Sırt, omuz ve biceps kaslarını çalıştırır.","Geniş bir tutamakla donatılmış bir çekme makinesinde durun ve çekme barını yavaşça çekin, omuzlarınızı ve sırtınızı gererek."),
-    CALF_RAISES("Calf kaslarını çalıştırır.",""),
     KETTLEBENG_SWING("Sırt, kalça ve karın kaslarını çalıştırır.","Bir kettlebell tutun ve ayaklarınızı omuz genişliği kadar açın. Kettlebell'i yavaşça yere doğru indirin, ardından sırtınızı düz tutarak hızla kaldırın."),
     ROWS("Sırt ve biceps kaslarını çalıştırır.","Barbell ya da dumbbell kavranır, vücut yatay pozisyonda ve kollar yere paralel konumda çekilir."),
     SPLIT_SQUATS("Bacak kaslarını güçlendirir.", "Ayaklarınızı omuz genişliğinde açın. Sağ ayağınızı bir adım ileriye doğru atın ve sol dizinizi yere doğru indirin. Daha sonra ayağa kalkın ve diğer bacağınızla aynı hareketi tekrarlayın."),
@@ -46,9 +45,9 @@ public enum Workouts {
     GOBLET_SQUATS("Bacak ve kalça kaslarını güçlendirir.", "Dumbbell'i iki elinizle tutun ve göğsünüzün önünde tutun. Ayaklarınızı omuz genişliğinde açın ve squat yapın."),
     OVERHEAD_SQUATS("Tüm vücudu çalıştırır.", "Barbell'i başınızın üstünde tutun ve ayaklarınızı omuz genişliğinde açın. Squat yapın ve barbell'i başınızın üstünde tutun."),
     PISTOL_SQUATS("Bacak kaslarını güçlendirir.", "Tek bacakla squat yapın. Diğer bacağınızı ileri doğru uzatın ve squat yaparken havada tutun."),
-    STABILITY_BALL_LEG_CURLS("Arka bacak kaslarını güçlendirir.", "Sırt üstü yere yatın ve topuğunuzu bir stability ball'a koyun. Kalçanızı kaldırarak topuğunuzu topa doğru çekin. Ardından ayağınızı yavaşça başlangıç pozisyonuna getirin.")
+    STABILITY_BALL_LEG_CURLS("Arka bacak kaslarını güçlendirir.", "Sırt üstü yere yatın ve topuğunuzu bir stability ball'a koyun. Kalçanızı kaldırarak topuğunuzu topa doğru çekin. Ardından ayağınızı yavaşça başlangıç pozisyonuna getirin."),
     STEP_DOWNS("Kalça kaslarını çalıştırır.", "Bir adım yüksekliğinde bir bankın önünde durun ve bir ayağınızı aşağıya doğru indirin. Diğer ayağınızı kullanmadan squat yapın ve tekrar yavaşça yukarı çıkın."),
-    BARBELL ROWS ("Sırt, omuz, bacak, ve kolları çalıştırır."," Barbell'ı tutarak beliniz bükülecek ve dirsekleriniz bükülü olarak ağırlığı kendinize doğru çekin. Sonra kontrollü bir şekilde bırakın.")
+    BARBELL_ROWS("Sırt, omuz, bacak, ve kolları çalıştırır."," Barbell'ı tutarak beliniz bükülecek ve dirsekleriniz bükülü olarak ağırlığı kendinize doğru çekin. Sonra kontrollü bir şekilde bırakın."),
     INCLINE_BENCH_ROWS ("Sırt kaslarınızı hedefler."," İncline bench üzerine yatarak dumbbell'ı ellerinize alın ve göğsünüze doğru çekin. Sonra tekrar indirin."),
     DUMBBELL_ROWS ("Sırt, omuz, ve kolları çalıştırır."," Dumbbell'ı tek elinizle alın ve öne doğru eğilerek çeneniz ile aynı seviyeye getirin. Sonra ağırlığı bırakın."),
     KETTLEBELL_ROWS ("Sırt, omuz, ve kolları çalıştırır."," Kettlebell'ı tek elinizle alın ve vücudunuzu öne doğru eğerek sırtınızı düzleştirin. Sonra ağırlığı bırakın."),
@@ -59,17 +58,17 @@ public enum Workouts {
     PREACHER_CURLS ("Biceps kaslarını hedefler."," Preacher bench üzerine oturarak barbell'ı ellerinizle tutun ve dirseklerinizi sabit tutarak bileklerinizi kaldırın. Sonra tekrar indirin."),
     CABLE_CURLS("Biceps kaslarını çalıştırır.", "Kabloları bir makaraya takın ve her elinize bir tutacak bağlayın. Dirseklerinizi yanınıza yapışık tutarak, avuç içlerinizi yukarı doğru çevirerek tutacakları omuz seviyesine kadar kaldırın ve tekrar yavaşça indirin."),
     PLANK("Karın kaslarını, sırt kaslarını ve omuzları çalıştırır.","Düz bir zemine yüzüstü yatın ve dirseklerinizin üzerine dayanın. Ayaklarınızı geriye doğru iterek plank pozisyonunu alın. Vücudunuzu düz bir çizgi halinde tutun ve birkaç saniye boyunca pozisyonda kalın."),
-    DUMBBELL_FLYS("Göğüs kaslarını çalıştırır.", "Bir çift hafif dambıl alın ve sırtüstü uzanın. Dambılları göğüs hizasında tutun ve kollarınızı yavaşça açarak yanlara doğru yayın. Kollarınızın yere paralel olmasına dikkat edin ve tekrar yavaşça kollarınızı göğsünüze doğru çekin.")
-    RESISTANCE_BAND_PULL_APARTS("Sırt kaslarını çalıştırır.", "Dirseklerinizi düz tutarak her iki elinize bir direnç bandı alın. Bandı göğsünüzün önünde tutun ve kollarınızı yavaşça yanlara doğru açın. Bandı kollarınızın arkasında birleştirin ve tekrar yavaşça başlangıç pozisyonuna geri dönün.")
-    T_BAR_ROWS("Sırt ve omuz kaslarını çalıştırır.", "Barı bir köşeye takın ve bir tutacak bağlayın. Barı tutun ve ayaklarınızı omuz genişliği kadar açarak hafifçe çömelin. Sırtınızı düz tutarak barı kaldırın ve omuz hizanıza kadar çekin. Kontrollü bir şekilde indirin ve tekrarlayın.")
-    INCLINE_DUMBBELL_CURLS("Biceps kaslarını çalıştırır.", "Bir benchin eğimli tarafına oturun ve bir çift hafif dambıl alın. Dambılları avuç içleri birbirine bakacak şekilde tutun ve yavaşça kaldırın. Üst kolunuzu sabit tutarak, dambılları omuz seviyesine kadar kaldırın ve tekr PLYOMETRIC_PUSHUPS("Kol kaslarını çalıştırır ve kuvvetlendirir.", "Pushup pozisyonunda başınızı hızlıca yukarı iterken el ve ayaklarınızı havaya sıçrayın. Daha sonra tekrar yere inin ve düz bir pozisyona geri dönün."),
+    DUMBBELL_FLYS("Göğüs kaslarını çalıştırır.", "Bir çift hafif dambıl alın ve sırtüstü uzanın. Dambılları göğüs hizasında tutun ve kollarınızı yavaşça açarak yanlara doğru yayın. Kollarınızın yere paralel olmasına dikkat edin ve tekrar yavaşça kollarınızı göğsünüze doğru çekin."),
+    RESISTANCE_BAND_PULL_APARTS("Sırt kaslarını çalıştırır.", "Dirseklerinizi düz tutarak her iki elinize bir direnç bandı alın. Bandı göğsünüzün önünde tutun ve kollarınızı yavaşça yanlara doğru açın. Bandı kollarınızın arkasında birleştirin ve tekrar yavaşça başlangıç pozisyonuna geri dönün."),
+    T_BAR_ROWS("Sırt ve omuz kaslarını çalıştırır.", "Barı bir köşeye takın ve bir tutacak bağlayın. Barı tutun ve ayaklarınızı omuz genişliği kadar açarak hafifçe çömelin. Sırtınızı düz tutarak barı kaldırın ve omuz hizanıza kadar çekin. Kontrollü bir şekilde indirin ve tekrarlayın."),
+    INCLINE_DUMBBELL_CURLS("Biceps kaslarını çalıştırır.", "Bir benchin eğimli tarafına oturun ve bir çift hafif dambıl alın. Dambılları avuç içleri birbirine bakacak şekilde tutun ve yavaşça kaldırın. Üst kolunuzu sabit tutarak, dambılları omuz seviyesine kadar kaldırın ve tekrar indirin"),
+    PLYOMETRIC_PUSHUPS("Kol kaslarını çalıştırır ve kuvvetlendirir.", "Pushup pozisyonunda başınızı hızlıca yukarı iterken el ve ayaklarınızı havaya sıçrayın. Daha sonra tekrar yere inin ve düz bir pozisyona geri dönün."),
     CLAPPING_PUSHUPS("Göğüs kaslarını güçlendirir.", "Pushup pozisyonunda yere doğru eğilin. Kendinizi yukarı itin ve havada iken ellerinizi çırpın. Düşüşünüzü kontrol edin ve tekrar başlangıç pozisyonuna dönün."),
     CHEST_FLYS("Göğüs kaslarını geliştirir.", "Dambıl tutarak sırtınızı düz tutun ve kollarınızı yere paralel olacak şekilde yanlara doğru açın. Dambilleri kontrol ederek, kolunuzu göğüs hizasına kadar açın ve tekrar yavaşça indirin."),
     INCLINE_BENCH_PRESS("Göğüs kaslarını çalıştırır.", "Ağırlıklı bench press egzersizinde bench'i açılı bir şekilde kullanarak göğüs kaslarını daha iyi hedefleyebilirsiniz."),
     DECLINE_BENCH_PRESS("Göğüs kaslarını çalıştırır.", "Ağırlıklı bench press egzersizinde bench'i ters bir şekilde kullanarak göğüs kaslarını daha iyi hedefleyebilirsiniz."),
     DUMBBELL_BENCH_PRESS("Göğüs kaslarını çalıştırır.", "Dumbell bench press egzersizi, bench press hareketine benzer ancak her elde dumbell tutulur ve ağırlıkların birbirine yakın kalması gerekir."),
     ARNOLD_PRESS("Omuz kaslarını çalıştırır.", "Dumbell tutarak başlangıç pozisyonunda tutun ve daha sonra elinizin üst kısmını dışa doğru çevirerek kaldırın. Dumbell'leri yukarı doğru itin ve tekrar başlangıç pozisyonuna dönün."),
-    LATERAL_RAISES("Orta ve yan omuz kaslarını çalıştırır.", "Dambıl tutarak sırtınızı düz tutun ve kollarınızı vücudunuzdan uzaklaştırarak kaldırın. Kollarınız yere paralel olana kadar yavaşça kaldırın, ardından aynı hızda indirin."),
     REAR_DELT_FLYS("Omuz kaslarını çalıştırır.", "Dambıl tutarak bacaklarınızı omuz genişliği kadar açın ve belinizi hafifçe bükerek öne doğru eğilin. Dambilleri yere doğru salın ve sonra kollarınızı yavaşça yana doğru açın."),
     FACE_PULLS("Omuz ve üst sırt kaslarını çalıştırır.", "Kablo makinesinde orta yükseklikte bir ağırlık seçin ve iki elinizi de kablo tokalarına takın. Ayakta durun ve kollarınızı yüzünüze doğru çekerek omuzlarınızı sıkın, sonra kollarınızı yavaşça geriye doğru uzatın."),
     FARMER_WALKS("Ön kol, sırt, omuz ve bacak kaslarını çalıştırır.", "Dumbbell'ları iki elinizle kaldırın ve yere düzgün bir şekilde yerleştirin. Ayakta durun ve dumbbell'ları tutarak yürümeye başlayın. Sırtınızı düz tutun ve adımlarınızı dengeli ve ölçülü bir şekilde atın."),
@@ -82,7 +81,7 @@ public enum Workouts {
     HACK_SQUATS("Bacak kaslarını çalıştırır.", "Bir makinenin platformunda ayaklarınızı yerleştirin ve sırtınızı platforma dayayın. Bacaklarınızı yavaşça bükün ve ardından yavaşça uzatın."),
     INCLINE_LEG_PRESS("Bacak kaslarını çalıştırır.", "Bir makinenin eğimli yüzeyinde oturun ve bacaklarınızı birleştirin. Dizleri yavaşça bükün ve ardından yavaşça uzatın."),
     SEATED_LEG_PRESS("Bacak kaslarını çalıştırır.", "Bir makineye oturun ve ayaklarınızı platforma yerleştirin. Bacaklarınızı yavaşça bükün ve ardından yavaşça uzatın."),
-    PLATE_TWISTS("Core kaslarını çalıştırır.", "Düz bir zeminde oturun, dizlerinizi bükün ve ayaklarınızı yere yerleştirin. Ellerinizle bir ağırlık levhasını tutun, göğsünüzün önünde tutun ve üst vücudunuzu sağa ve sola çevirerek ağırlık levhasını kontrol ederek hareket edin.")
+    PLATE_TWISTS("Core kaslarını çalıştırır.", "Düz bir zeminde oturun, dizlerinizi bükün ve ayaklarınızı yere yerleştirin. Ellerinizle bir ağırlık levhasını tutun, göğsünüzün önünde tutun ve üst vücudunuzu sağa ve sola çevirerek ağırlık levhasını kontrol ederek hareket edin."),
     FRONT_RAISE("Ön omuz kaslarını çalıştırır.", "Hafif ağırlıklarla ellerinizi önünüze doğru kaldırın, omuzlarınızı kulağınıza kadar kaldırmadan yavaşça indirin."),
     REAR_DELT_FLY("Arka omuz kaslarını çalıştırır.", "Dumbbell'leri alın ve sırtınıza doğru çekin, omuzlarınızı kulağınıza kadar kaldırmadan yavaşça indirin."),
     BENT_OVER_ROW("Sırt kaslarını çalıştırır.", "Ayaklarınızı omuz genişliğinde açın, dizlerinizi bükün ve belinizi hafifçe öne doğru eğin. Dumbbell'leri ellerinizle tutun ve dirseklerinizi geriye doğru çekerek sırt kaslarınızı sıkın."),
@@ -95,11 +94,7 @@ public enum Workouts {
     TABATA("Kardiyo dayanıklılığını artırır.", "Sırt üstü yatın ve dizlerinizi bükün. Kollarınızı başınızın yanında tutun. Bacaklarınızı yukarı kaldırın ve ellerinizle dokunun. Bacaklarınızı tekrar yere indirin ve tekrarlayın."),
     HIGH_KNEES("Kardiyo dayanıklılığını artırır.", "Ayaklarınızı omuz genişliği kadar açın ve sırayla her bir dizinizi göğsünüze doğru çekin."),
     RUNNING_STAIRS("Kardiyo dayanıklılığını artırır.", "Merdivenlerde yukarı ve aşağı koşun. Hızınızı artırın veya azaltın, interval antrenmanı yapmak için koşuya ara verin."),
-    JUMP_ROPE("Kardiyo dayanıklılığını artırır.", "İki ayakla sıçrayarak ve ipi alttan üste doğru atlayarak atlama ipiyle zıplayın."),
-
-
-
+    JUMP_ROPE("Kardiyo dayanıklılığını artırır.", "İki ayakla sıçrayarak ve ipi alttan üste doğru atlayarak atlama ipiyle zıplayın.");
     private final String description;
     private final String instruction;
-
     }
