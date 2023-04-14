@@ -1,7 +1,25 @@
 package com.example.fitnesscoach.model.entity;
 
-import com.example.fitnesscoach.utils.Workouts;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+
+@Getter
+@Setter
 public class Exercise {
-    //exercises from workout from utitilies will be taken to here
+
+    private String bodyPart;
+
+    private String equipment;
+
+    private String gifUrl;
+
+    private String id;
+
+    private String name;
+
+    private String target;
+
 }
+
